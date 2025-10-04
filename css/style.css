@@ -318,6 +318,12 @@ template {
   display: box;
   display: flex;
   margin: -2rem;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .row .col,
 .row-row .col {
