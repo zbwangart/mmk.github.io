@@ -1233,6 +1233,47 @@ dl {
 .mobile-nav {
   display: none;
 }
+.page-nav {
+  position: relative;
+  text-align: center;
+}
+.page-nav .page-number {
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 0 6px;
+  border-radius: 4px;
+  color: #292929;
+  transition: all 0.3s ease-in-out;
+}
+.page-nav .page-number.current {
+  background-color: #11916a;
+  color: #fff;
+}
+.page-nav a.page-number:hover {
+  color: #11916a;
+}
+.page-nav .extend {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  align-items: center;
+}
+.page-nav .extend.prev {
+  left: 0;
+}
+.page-nav .extend.next {
+  right: 0;
+}
 .search-btn {
   display: -webkit-box;
   display: -moz-box;
@@ -1530,59 +1571,6 @@ dl {
 .archive-article-date,
 .archive-article-date:hover {
   color: #999;
-}
-#page-nav {
-  zoom: 1;
-  margin: 2rem auto;
-  background: #fff;
-  border: 1px #ddd solid;
-  border-radius: 3px;
-  text-align: center;
-  color: #999;
-  overflow: hidden;
-}
-#page-nav:before,
-#page-nav:after {
-  content: "";
-  display: table;
-}
-#page-nav:after {
-  clear: both;
-}
-#page-nav a,
-#page-nav span {
-  padding: 10px 20px;
-  line-height: 1;
-  height: 2ex;
-}
-#page-nav a {
-  color: #999;
-  text-decoration: none;
-}
-#page-nav a:hover {
-  background: #999;
-  color: #fff;
-}
-#page-nav .prev {
-  float: left;
-}
-#page-nav .next {
-  float: right;
-}
-#page-nav .page-number {
-  display: inline-block;
-}
-@media mq-mobile {
-  #page-nav .page-number {
-    display: none;
-  }
-}
-#page-nav .current {
-  color: #292929;
-  font-weight: bold;
-}
-#page-nav .space {
-  color: #ddd;
 }
 .footer {
   background: #292929;
@@ -2007,6 +1995,9 @@ pre .javascript .function {
   width: 45%;
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
+}
+.zebra-gallery .gallery-img {
+  border-radius: 0.5rem;
 }
 .zebra-article-title {
   margin-bottom: 1rem;
