@@ -224,7 +224,10 @@
 <script>
   var slider = tns({
     container: '.tiny-slider',
-    items: 4,
+    items: 1,
+    responsive: {
+      576: { items: 4 }
+    },
     speed: 400,
     gutter: 20,
     nav: false,

@@ -1885,27 +1885,6 @@ pre .javascript .function {
 .featured-text-title {
   color: #11916a;
 }
-.featured.featured-stationary {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-}
-.featured.featured-stationary .featured-item-title {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background: -webkit-linear-gradient(bottom, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0) 100%);
-  background: -moz-linear-gradient(bottom, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0) 100%);
-  background: -o-linear-gradient(bottom, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0) 100%);
-  background: -ms-linear-gradient(bottom, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0) 100%);
-  background: linear-gradient(to top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0) 100%);
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 .tns-controls-button {
   position: absolute;
   z-index: 9;
@@ -2039,19 +2018,6 @@ pre .javascript .function {
 @media screen and (min-width: 576px) {
   .hello-image {
     display: block;
-  }
-}
-.featured-tiny-slider {
-  display: none;
-}
-@media screen and (min-width: 576px) {
-  .featured-tiny-slider {
-    display: block;
-  }
-}
-@media screen and (min-width: 576px) {
-  .featured-stationary {
-    display: none !important;
   }
 }
 .categories {
