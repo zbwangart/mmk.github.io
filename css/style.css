@@ -1827,7 +1827,6 @@ pre .javascript .function {
 }
 .featured-item {
   position: relative;
-  max-height: 160px;
   overflow: hidden;
 }
 .featured-item,
@@ -2018,6 +2017,11 @@ pre .javascript .function {
 @media screen and (min-width: 576px) {
   .hello-image {
     display: block;
+  }
+}
+@media screen and (min-width: 576px) {
+  .featured-item {
+    max-height: 160px;
   }
 }
 .categories {
